@@ -20,8 +20,11 @@ public class Day5task4 {
         js.executeScript("window.scrollBy(0,9000)", "");
         driver.findElement(By.xpath("//*[@id=\"Mod112\"]/div/div/ul/li[1]/a/img")).click();
         driver.navigate().back();
+        Thread.sleep(1000);
         driver.navigate().forward();
+        Thread.sleep(1000);
         driver.navigate().refresh();
+        Thread.sleep(1000);
         driver.close();
         
         

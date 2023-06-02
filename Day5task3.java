@@ -22,11 +22,11 @@ public class Day5task3 {
         JavascriptExecutor js= (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,9000)", "");
         driver.findElement(By.xpath("//*[@id=\"Mod112\"]/div/div/ul/li[1]/a/img")).click();
-        List<WebElement> listElement=driver.findElements(By.className("product-title"));
-        for (WebElement okCurrentLink : listElement)
+        List<WebElement> lists=driver.findElements(By.xpath("//h2[@class='product-title']"));
+        for (WebElement web : lists)
         {
-        	String str=okCurrentLink.getText();
-        	System.out.println(str);
+        	
+        	System.out.println(web.getText());
         	
         }
         

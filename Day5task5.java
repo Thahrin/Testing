@@ -21,6 +21,7 @@ public class Day5task5 {
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/div/div[2]/form/button")).click();
         driver.findElement(By.xpath("//*[@id=\"sibe-box\"]/ul[2]/li[4]/a")).click();
         driver.findElement(By.xpath("//*[@id=\"sibe-box\"]/ul[2]/li[4]/a")).getText();
+        System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div[1]/section/div/div/div/div[1]/h3")).getText());
         WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"search-btn\"]"));
         Dimension dim=searchBox.getSize();
         System.out.println(dim);
